@@ -121,7 +121,7 @@ background: linear-gradient(to right, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, F
 }
 
 
-@media (max-width:600px) {
+@media (max-width:500px) {
     .menu {
         display: none;
     }
