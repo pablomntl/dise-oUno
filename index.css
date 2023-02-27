@@ -9,8 +9,11 @@
     padding: 0;
     box-sizing: border-box; 
     text-decoration: none;
+    list-style: none;
 }
-
+header {
+    display: none;
+}
 section {
     display: flex;
 }
@@ -19,6 +22,14 @@ section {
     flex:  10% 0 0;
     background-color: var(--primary-color);
 }
+.cerrar-menu {
+    color: #0083B0;
+}
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
 .menu li {
     
     padding: 1rem 2rem;
@@ -122,8 +133,52 @@ background: linear-gradient(to right, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, F
 
 
 @media (max-width:600px) {
-    .menu {
-        display: none;
+    header {
+        display: flex;
+        justify-content: space-between;
+        height: 40px;
+    }
+   
+   .abrir-menu,
+   .cerrar-menu  {
+    display: block;
+    border: 0;
+    font-size: 1.25rem;
+    background-color: transparent;
+    cursor: pointer;
+    margin-right: 1rem;
+   }
+   .menu {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1c1c1c;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    z-index: 1;
+}
+.vertical-nav {
+    flex:  0 0 0;
+}
+    .menu.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .menu-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .menu-list li a {
+        color: #ecececec;
     }
     .contenedor-principal {
         display: flex;
