@@ -43,11 +43,11 @@ section {
     display: flex;
     width: 100%;
     background-color: #191825;
-
 }
 .contenedor-card {
     padding: 1em;
-    flex: 0 1 0;
+    /* flex: 0 1 0; */
+    
    
 }
 
@@ -118,4 +118,18 @@ background: linear-gradient(to right, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, F
     background: linear-gradient(to bottom, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
 
+}
+
+
+@media (max-width:600px) {
+    .menu {
+        display: none;
+    }
+    .contenedor-principal {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #191825;
+    }
+  
 }
