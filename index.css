@@ -45,7 +45,7 @@ section {
     background-color: #191825;
 }
 .contenedor-card {
-    padding: 1em;
+    padding: 1em ;
     /* flex: 0 1 0; */
     
    
@@ -121,7 +121,7 @@ background: linear-gradient(to right, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, F
 }
 
 
-@media (max-width:500px) {
+@media (max-width:600px) {
     .menu {
         display: none;
     }
@@ -131,5 +131,7 @@ background: linear-gradient(to right, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, F
         width: 100%;
         background-color: #191825;
     }
-  
+    .card {
+        min-width: 15em;
+    }
 }
