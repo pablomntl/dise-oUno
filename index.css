@@ -131,7 +131,12 @@ background: linear-gradient(to right, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, F
         width: 100%;
         background-color: #191825;
     }
+    .contenedor-card {
+        display: grid;
+        justify-content: center;
+    }
     .card {
-        min-width: 15em;
+        display: grid;
+        width: 15em;
     }
 }
