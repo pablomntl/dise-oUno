@@ -1,0 +1,121 @@
+:root{
+    --font: 'Roboto', sans-serif;
+    --primary-color: #2E3840;
+    --secundary-color: #e51f1f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    text-decoration: none;
+}
+
+section {
+    display: flex;
+}
+/* código perteneciente al nav */
+.vertical-nav {
+    flex:  10% 0 0;
+    background-color: var(--primary-color);
+}
+.menu li {
+    
+    padding: 1rem 2rem;
+    text-align: center;
+    margin: 5px;
+    font-family: var(--font);
+}
+
+.menu  a {
+    color: #F3EFE0;
+}
+.active {
+    background-color: var(--secundary-color);
+}
+.menu li:hover {
+    transition: .4s ease;
+    background-color: #131212;
+}
+
+
+.contenedor-principal {
+    display: flex;
+    width: 100%;
+    background-color: #191825;
+
+}
+.contenedor-card {
+    padding: 1em;
+    flex: 0 1 0;
+   
+}
+
+.card {
+    width: 400px;
+    height: 15em;
+    background-color: #2E3840;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 2em;
+    color: rgb(239, 239, 239, 0.6);
+}
+
+article {
+    flex: 2 0 0;
+}
+
+.contenido-article-uno {
+   padding: 1em;
+   width: 100%;
+   
+   
+}
+.content-article {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 3rem;
+        grid-auto-flow: dense;
+        justify-content: center;
+}
+
+.card-dos{
+    min-height: 250px;
+    margin-top: 5px;
+    border-radius: 5px;
+    padding: 1em;
+   
+}
+.card-dos:nth-child(1) {
+    background: #3494E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+}
+.card-dos:nth-child(2) {
+    background: #00B4DB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.card-dos:nth-child(3) {
+    background: #c0c0aa;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #1cefff, #c0c0aa);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #1cefff, #c0c0aa); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+}
+.card-dos:nth-child(4) {
+    background: #FF5F6D;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.card-dos:nth-child(5) {
+    background: #67B26F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #4ca2cd, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+}
